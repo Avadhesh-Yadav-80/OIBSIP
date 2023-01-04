@@ -1,0 +1,119 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: 0;
+    transition: all 0.5s ease;
+}
+
+body {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+body {
+  background: linear-gradient(to right,  rgb(73, 80, 83), rgb(169, 163, 228) ,  rgb(74, 141, 180));
+}
+
+.container {
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    place-items: center;
+
+}
+
+.calculator {
+    position: relative;
+    height: auto;
+    width: auto;
+    padding: 25px;
+    border: 2px solid yellow;
+    border-radius: 15%;
+}
+
+#display {
+    margin: 0 5px;
+    height: 150px;
+    width: auto;
+    max-width: 270px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    font-size: 30px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    color: black;
+    padding-right: 5%;
+    overflow-x: scroll;
+    background-color: white;
+    border-radius: 15px;
+    border: 2px solid blue;
+  }
+
+#display::-webkit-scrollbar {
+    display: block;
+    height: 3px;
+}
+
+button {
+    height: 60px;
+    width: 60px;
+    border: 0;
+    border-radius: 30px;
+    margin: 5px;
+    font-size: 30px;
+    cursor: pointer;
+    transition: all 200ms ease;
+}
+
+button:hover {
+    transform: scale(1.1);
+}
+
+button#equal {
+    height: 130px;
+}
+  .calculator.dark {
+    background: linear-gradient(to right,  rgb(47, 51, 53), black ,  rgb(9, 26, 36));
+  }
+
+  .calculator.dark #display {
+    color: black;
+  }
+
+  .calculator.dark button#clear {
+    background-color: rgb(21, 255, 53);
+    color: black;
+    font-weight: bolder;
+    font-size: 30px;
+  }
+
+  .calculator.dark button.btn-number {
+    background-color: black;
+    color: white;
+    font-weight: bolder;
+    border-radius: 19%;
+    border: 2px solid blue;
+  }
+
+  .calculator.dark button.btn-operator {
+    background-color: #a5abf8;
+    color:black;
+    font-size: 30px;
+    border: 1px solid rgb(184, 184, 125);
+  }
+  
+  .calculator.dark button.btn-equal {
+    background-color: white;
+    color: rgb(12, 6, 6);
+    font-weight: bold;
+    font-size:35px;
+  }
+  .text-center{
+      text-align: center;
+  }
