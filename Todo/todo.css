@@ -1,0 +1,188 @@
+:root {
+	background: linear-gradient(to right,  rgb(66, 224, 114), rgb(172, 153, 153) ,  rgb(57, 176, 223));
+	--darkest: #000000;
+	--grey: #6B7280;
+	--pink: #EC4899;
+	--purple: #8B5CF6;
+	--light: #EEE;
+	--yellow: rgb(117, 255, 5);
+	--red: rgb(255, 21, 21);
+}
+h1 {text-align: center;}
+h2{text-align:left}
+* {
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+	color: rgb(0, 0, 0);
+	/* background-image: url(td.jpg); */
+}
+
+header {
+	padding: 2rem 1rem;
+	max-width: 800px;
+	width: 100%;
+	margin: 0 auto;
+}
+
+header h1{ 
+	font-size: 3rem;
+	font-weight: 300;
+	color: black;
+	margin-bottom: 1rem;
+	font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+#new-task-form {
+	display: flex;
+    border-radius: 20px;
+}
+
+input, button {
+	appearance: none;
+	border: none;
+	outline: none;
+	background: none;
+}
+
+#new-task-input {
+	flex: 1 1 0%;
+	background-color: rgb(255, 255, 255);
+	padding: 1rem;
+	border-radius: 1rem;
+	margin-right: 1rem;
+	color: black;
+	border: 3px solid rgb(0, 0, 255);
+	font-size: 1.40rem;
+    font-family: cursive;
+
+}
+
+#new-task-input::placeholder {
+	color: black;
+    font-family: cursive;
+}
+
+#new-task-submit {
+	color:white;
+	font-size: 1.35rem;
+	font-weight: 700;
+	width: 4em;
+	background-color:rgb(0, 0, 0);
+    border-radius: 20px;
+	border: 2px solid blue;
+	cursor: pointer;
+	transition: 0.4s;
+}
+
+#new-task-submit:hover {
+	color:black;
+	border: 2px solid black;
+	background-color: blue;
+	transform: scale(1.05);
+
+
+}
+
+#new-task-submit:active {
+	opacity: 0.6;
+}
+
+main {
+	flex: 1 1 0%;
+	max-width: 800px;
+	width: 100%;
+	margin:auto;
+}
+
+.task-list {
+	padding: 1rem;
+}
+
+.task-list h2 {
+	font-size: 2rem;
+	font-weight: 300;
+	color:black;
+	margin-bottom: 1rem;
+	font-family: fantasy;
+    
+}
+
+hr{
+	background-color:red;
+	height: 5px;
+}
+
+#tasks .task {
+	display: flex;
+	justify-content: space-between;
+	background-color: rgb(55, 168, 233);
+	padding: 1rem;
+	border-radius: 1rem;
+	margin-bottom: 1rem;
+    border: 2px solid yellow;
+
+}
+
+.task .content {
+	flex: 1 1 0%;
+}
+
+.task .content .text {
+	color: black;
+	font-family: cursive;
+	font-size: 1.3em;
+	width: 100%;
+	display: block;
+	transition: 0.4s;
+}
+
+.task .content .text:not(:read-only) {
+	color: var(--pink);
+}
+
+.task .actions {
+	display: flex;
+	margin: 0 -0.5rem;
+}
+
+.task .actions button {
+	cursor: pointer;
+	margin: 0 0.5rem;
+	font-size: 1.125rem;
+	font-weight: 700;
+	text-transform: uppercase;
+	transition: 0.4s;
+}
+
+.task .actions button:hover {
+	opacity: 0.8;
+}
+
+.task .actions button:active {
+	opacity: 0.6;
+}
+
+.task .actions .delete {
+	color: red;
+}
+
+
+
+.rotate{
+	height: 100px;
+	position: relative;
+	animation-name: example;
+	animation-duration: 2s;
+	animation-delay: 1s;
+	animation-iteration-count: 1;
+  }
+  
+  @keyframes example {
+	0%   {rotate:360deg;}
+  }
